@@ -1,0 +1,93 @@
+html {
+    position: relative;
+}
+
+body {
+    margin-bottom: 120px;
+    margin-top: 30px;
+}
+
+.jumbotron {
+    height: 400px;
+    background-image: url('../img/jarak.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 -120px;
+    color: #eaeaea;
+    overflow: hidden;
+}
+
+.jumbotron img {
+    width: 200px;
+    border: 5px solid #eaeaea;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron h1, .jumbotron p {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    width: 250px;
+    border-top: 3px solid #999;
+}
+
+section {
+    min-height: 600px;
+}
+
+.pKiri, .pKanan {
+    opacity: 0;
+    transform: translate(-50px, 0) rotate(15deg);
+    transition: 1s;
+}
+
+.pKanan {
+    transform: translate(50px, 0) rotate(-15deg);
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.portfolio {
+    background-color: #eee;
+}
+
+.portfolio .thumbnail {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: .5s;
+}
+
+.portfolio .thumbnail.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.contact {
+    min-height: 800px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #333;
+    padding-top: 40px;
+}
+
+footer p {
+    color: #aaa;
+    font-size: 1em;
+}
+
+footer p i {
+    color: salmon;
+}
+
+footer p i.glyphicon-copyright-mark {
+    color: white;
+}
