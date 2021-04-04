@@ -1,0 +1,9 @@
+// Mixin
+@mixin tombol {
+  display: inline;
+  color: white;
+  background-color: $buttonColor;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}

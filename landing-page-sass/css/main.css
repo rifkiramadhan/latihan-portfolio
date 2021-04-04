@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap");
+body {
+  font-family: "Monserrat", sans-serif;
+}
+
+body::before {
+  content: "";
+  background-image: url(../img/bg.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 60vmax;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 992px) {
+  body::before {
+    opacity: 0.4;
+  }
+}
+
+.custom-nav .navbar-brand img {
+  width: 25px;
+  height: 25px;
+  margin-top: -7px;
+}
+
+.custom-nav .navbar-brand span {
+  color: blue;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-left: 0.4em;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+  color: #aabde6;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 2.4em;
+  -webkit-transition: 0.3s color ease;
+  transition: 0.3s color ease;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: black;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .sign-up-button {
+  display: inline;
+  color: white;
+  background-color: blue;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-nav {
+    margin-top: -1em;
+  }
+}
+
+.custom-section {
+  margin-top: 10em;
+}
+
+.custom-section h2 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #393c43;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.custom-section h3 {
+  font-weight: 400;
+  font-size: 3rem;
+  color: #c5abdc;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.custom-section p {
+  color: #393c43;
+  font-size: 1.1rem;
+  margin-top: 2em;
+}
+
+.custom-section a {
+  margin-top: 2.2em;
+  display: inline;
+  color: white;
+  background-color: blue;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.custom-section a:hover {
+  color: #393c43;
+  border: 1px solid #393c43;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-section {
+    margin-top: 3em;
+    text-align: center;
+  }
+  .custom-section h2,
+  .custom-section h3,
+  .custom-section p {
+    text-shadow: 1px 1px 2px rgba(57, 60, 67, 0.4);
+  }
+  .custom-section h3 {
+    color: #50555f;
+  }
+}
+/*# sourceMappingURL=main.css.map */

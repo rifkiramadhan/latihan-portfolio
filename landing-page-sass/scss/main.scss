@@ -1,0 +1,123 @@
+@import "fonts";
+@import "variables";
+@import "mixins";
+
+// Styles
+body {
+  font-family: "Monserrat", sans-serif;
+  &::before {
+    content: "";
+    background-image: url(../img/bg.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 60vmax;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    @media screen and (max-width: 992px) {
+      opacity: 0.4;
+    }
+  }
+}
+
+// Navigasi / Navbar
+.custom-nav {
+  .navbar-brand {
+    img {
+      width: 25px;
+      height: 25px;
+      margin-top: -7px;
+    }
+
+    span {
+      color: $textLogo;
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin-left: 0.4em;
+    }
+  }
+
+  #navbarNav {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $secondaryColor;
+          font-weight: 500;
+          text-transform: uppercase;
+          margin-left: 2.4em;
+          transition: 0.3s color ease;
+
+          &:hover {
+            color: darken($textColor, 30%);
+          }
+        }
+
+        .sign-up-button {
+          @include tombol;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    margin-top: -1em;
+  }
+}
+
+// Custom Section
+.custom-section {
+  margin-top: 10em;
+
+  h2 {
+    font-weight: 700;
+    font-size: 4rem;
+    color: $textColor;
+    white-space: nowrap;
+    line-height: 1;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 3rem;
+    color: $tertiaryColor;
+    white-space: nowrap;
+    line-height: 1;
+  }
+
+  p {
+    color: $textColor;
+    font-size: 1.1rem;
+    margin-top: 2em;
+  }
+
+  a {
+    margin-top: 2.2em;
+    @include tombol;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: $textColor;
+      border: 1px solid $textColor;
+      background-color: transparent;
+    }
+  }
+
+  @media screen and(max-width: 992px) {
+    margin-top: 3em;
+    text-align: center;
+    h2,
+    h3,
+    p {
+      text-shadow: 1px 1px 2px rgba($color: $textColor, $alpha: 0.4);
+    }
+
+    h3 {
+      color: lighten($textColor, 10%);
+    }
+  }
+}
